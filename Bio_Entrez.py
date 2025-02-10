@@ -2,8 +2,11 @@ from Bio import Entrez
 
 Entrez.email = 'ruby2015095231128@gmail.com'
 
-handle = Entrez.einfo()
+handle = Entrez.efetch( db = 'protein', term = 'alkaliphilic', rettype='gb', retmode='text' )
 record = Entrez.read(handle)
 
 print(record)
-print(type(record))
+#print(record.keys())
+#print(record['Count'])
+#print(record['DbInfo'].keys())
+#print(record['DbInfo']['MenuName'])
