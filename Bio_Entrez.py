@@ -1,6 +1,7 @@
 from Bio import Entrez
 from Bio import SeqIO
 
+#Just try
 Entrez.email = 'ruby2015095231128@gmail.com'
 
 handle = Entrez.esearch( db = 'protein', term = 'alkaliphilic' )
