@@ -22,6 +22,12 @@ for start in range(0, total_records, retmax):
     handle = Entrez.esearch(db=db, term=term, retmax=retmax, retstart=start)
     record = Entrez.read(handle)
     handle.close()
+
+    #將id寫入檔案
+    with open('idlist.txt', mode='a+', encoding='utf-8') as idlist_file:
+        for id in record['IdList']:
+            idlist_file.write(f'{id}\n')
     
-    # 打印當前頁的 ID
-    #print(f"Records {start + 1} to {start + len(record['IdList'])}: {record['IdList']}")
+    # 印出出當前頁的 ID
+    print(f"Records {start + 1} to {start + len(record['IdList'])}")
+    ''': {record['IdList']}'''
