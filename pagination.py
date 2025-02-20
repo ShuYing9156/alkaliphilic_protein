@@ -28,6 +28,6 @@ for start in range(0, total_records, retmax):
         for id in record['IdList']:
             idlist_file.write(f'{id}\n')
     
-    # 印出出當前頁的 ID
+    # 印出出當前頁的id
     print(f"Records {start + 1} to {start + len(record['IdList'])}")
     ''': {record['IdList']}'''
