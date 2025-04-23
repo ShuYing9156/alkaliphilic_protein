@@ -1,0 +1,14 @@
+./cd-hit-v4.8.1-2019-0228/cd-hit -i ./NCBI_fasta/filtered_seqs.fasta -o ./cdhit_result/ncbi70.fasta -c 0.70 -sc 1 -sf 1
+./cd-hit-v4.8.1-2019-0228/cd-hit -i ./NCBI_fasta/filtered_seqs.fasta -o ./cdhit_result/ncbi80.fasta -c 0.80 -sc 1 -sf 1
+./cd-hit-v4.8.1-2019-0228/cd-hit -i ./NCBI_fasta/filtered_seqs.fasta -o ./cdhit_result/ncbi90.fasta -c 0.90 -sc 1 -sf 1
+./cd-hit-v4.8.1-2019-0228/cd-hit -i ./NCBI_fasta/filtered_seqs.fasta -o ./cdhit_result/ncbi95.fasta -c 0.95 -sc 1 -sf 1
+
+./cd-hit-v4.8.1-2019-0228/cd-hit -i ./uniprot_fasta/filtered_uniprot_seqs.fasta -o ./cdhit_result/uniprot70.fasta -c 0.70 -sc 1 -sf 1
+./cd-hit-v4.8.1-2019-0228/cd-hit -i ./uniprot_fasta/filtered_uniprot_seqs.fasta -o ./cdhit_result/uniprot80.fasta -c 0.80 -sc 1 -sf 1
+./cd-hit-v4.8.1-2019-0228/cd-hit -i ./uniprot_fasta/filtered_uniprot_seqs.fasta -o ./cdhit_result/uniprot90.fasta -c 0.90 -sc 1 -sf 1
+./cd-hit-v4.8.1-2019-0228/cd-hit -i ./uniprot_fasta/filtered_uniprot_seqs.fasta -o ./cdhit_result/uniprot95.fasta -c 0.95 -sc 1 -sf 1
+
+./cd-hit-v4.8.1-2019-0228/cd-hit -i ./pdb_fasta/filtered_pdb_seqs.fasta -o ./cdhit_result/pdb70.fasta -c 0.70 -sc 1 -sf 1
+./cd-hit-v4.8.1-2019-0228/cd-hit -i ./pdb_fasta/filtered_pdb_seqs.fasta -o ./cdhit_result/pdb80.fasta -c 0.80 -sc 1 -sf 1
+./cd-hit-v4.8.1-2019-0228/cd-hit -i ./pdb_fasta/filtered_pdb_seqs.fasta -o ./cdhit_result/pdb90.fasta -c 0.90 -sc 1 -sf 1
+./cd-hit-v4.8.1-2019-0228/cd-hit -i ./pdb_fasta/filtered_pdb_seqs.fasta -o ./cdhit_result/pdb95.fasta -c 0.95 -sc 1 -sf 1
