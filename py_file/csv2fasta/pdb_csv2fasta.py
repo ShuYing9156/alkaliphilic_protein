@@ -8,4 +8,5 @@ with open('./pdb_fasta/pdb_csv2fasta.fasta', 'w') as fasta_file:
     for _, row in seqs_needed.iterrows():
         entry_id = row['Entry ID']
         sequence = row['Sequence']
-        fasta_file.write(f">{entry_id}\n{sequence}\n")
+        if pd.notna(entry_id) and pd.notna(sequence):
+            fasta_file.write(f">{entry_id}\n{sequence}\n")
