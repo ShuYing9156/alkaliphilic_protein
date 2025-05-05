@@ -1,6 +1,6 @@
 from Bio import SeqIO
 
-fasta_file = "./cdhit_result/all40.fasta"  
+fasta_file = "./all_fasta/uniprot_branch.fasta"  
 count = 0
 
 for record in SeqIO.parse(fasta_file, "fasta"):
