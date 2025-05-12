@@ -72,10 +72,10 @@ merge_fasta_files(fasta_files = files,
 
 
 #計算FASTA檔案中的序列數量
-'''
-count = count_seqs(all_seqs)
+
+count = count_seqs('./all_fasta/all40_pdb.fasta')
 print(count)
-'''
+
 
 
 #用CD-HIT將相似的序列聚類
@@ -142,7 +142,8 @@ uniprot_branch = './all_fasta/all40_uniprot.fasta'
 pdb_branch = './all_fasta/all40_pdb.fasta'
 
 output_files = [ncbi_branch, uniprot_branch, pdb_branch]
-
+'''
 all2three(all_fasta_file = all_fasta_file,
           original_files = original_files,
           output_files = output_files)
+'''
